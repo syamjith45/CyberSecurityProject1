@@ -144,7 +144,7 @@ body {
 .hero-media {
   position: absolute;
   inset: 0;
-  background: url("../assets/hero.jpg") center/cover no-repeat;
+  background: linear-gradient(135deg, #0a2a3a 0%, #0f1a24 50%, #0b0f14 100%);
   filter: saturate(.9);
 }
 
@@ -190,6 +190,21 @@ body {
   height: 36px;
   opacity: .85;
   filter: grayscale(1);
+}
+
+/* Badge Placeholders */
+.badge-placeholder {
+  height: 36px;
+  padding: 6px 12px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--muted);
+  display: flex;
+  align-items: center;
+  opacity: .85;
 }
 
 .band-cta {
@@ -371,6 +386,30 @@ body {
   overflow: hidden;
   clip: rect(0 0 0 0);
   white-space: nowrap;
+}
+
+/* Team Placeholder */
+.team-placeholder {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 3rem 2rem;
+  text-align: center;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.placeholder-content h4 {
+  color: var(--accent-2);
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.placeholder-content p {
+  color: var(--muted);
+  margin: 0;
 }
 
 /* Responsive Styles */
